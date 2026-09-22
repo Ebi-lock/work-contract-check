@@ -1,0 +1,22 @@
+{
+  "name": "contract-check",
+  "description": "日本語の契約書を、e-Gov法令検索から取得した現行条文を根拠に点検する。不利な条項と欠落している条項を、原文引用・リスク階級・修正条文案つきで指摘し、HTMLレポートを出力する。",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ebi-Lock"
+  },
+  "homepage": "https://github.com/Ebi-lock/work-contract-check",
+  "license": "MIT",
+  "keywords": [
+    "japan",
+    "legal",
+    "contract-review",
+    "compliance",
+    "freelance",
+    "契約書",
+    "業務委託契約",
+    "リーガルチェック",
+    "フリーランス法",
+    "下請法"
+  ]
+}

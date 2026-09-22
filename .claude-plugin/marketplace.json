@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "work-contract-check",
+  "description": "日本の契約実務向け Claude Code プラグイン集。契約書を、e-Gov法令検索から取得した現行条文を根拠に点検します。",
+  "owner": {
+    "name": "Ebi-Lock"
+  },
+  "plugins": [
+    {
+      "name": "contract-check",
+      "description": "日本語の契約書をレビューするスキル。条項の有無ではなく中身の書きぶりを判定し、自分にとって不利になり得る条項を原文引用・リスク階級・修正条文案つきで指摘する。本来あるべき条項が欠けている場合は、その空白が生む具体的なリスクを通知する。根拠となる条文は e-Gov法令API から現行条文を取得して引用し、リスク階級で色分けしたHTMLレポートを出力する。業務委託・請負・準委任・雇用・NDA・売買・賃貸借・ライセンスに対応。法的助言ではなく、弁護士に相談する前の一次スクリーニング。",
+      "author": {
+        "name": "Ebi-Lock"
+      },
+      "source": "./plugins/contract-check",
+      "category": "productivity",
+      "homepage": "https://github.com/Ebi-lock/work-contract-check/tree/main/plugins/contract-check"
+    }
+  ]
+}

@@ -48,12 +48,9 @@ yarn-error.log*
 credentials.json
 
 # ── Claude Code のローカル設定 ─────────────────────────
-# スキル本体（.claude/skills/）は成果物なので追跡する。
-# 端末ごとに変わる設定と一時ファイルだけを除外する。
-.claude/settings.local.json
-.claude/*.local.json
-.claude/todos/
-.claude/shell-snapshots/
+# スキルの実体は plugins/ 側。.claude/ は端末ごとのローカル設定なので
+# まるごと除外する（work-regulations-check と同じ方針）。
+.claude/
 
 # ── ツールが生成する作業ファイル ───────────────────────
 .playwright-mcp/
@@ -74,6 +71,7 @@ contract-review-*.md
 !docs/**/*.pdf
 
 # ── 評価・テストの作業ディレクトリ ─────────────────────
-# サンプル契約書と実行結果が入る。再生成できるので追跡しない。
-# 結果を残したくなったら、この行を消すか個別に git add -f する。
+# ベンチマークの実行結果が入る。再生成できるので追跡しない。
+# サンプル契約書は plugins/contract-check/skills/contract-check/evals/files/
+# に置いてあり、そちらは追跡対象。
 contract-check-workspace/
