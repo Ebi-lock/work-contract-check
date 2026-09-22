@@ -1,0 +1,79 @@
+# ── macOS ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Windows / Linux ────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+.directory
+
+# ── エディタ・IDE ──────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+
+# ── Python（scripts/ の実行時に生成される）────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node ───────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── 認証情報・環境変数 ─────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# ── Claude Code のローカル設定 ─────────────────────────
+# スキル本体（.claude/skills/）は成果物なので追跡する。
+# 端末ごとに変わる設定と一時ファイルだけを除外する。
+.claude/settings.local.json
+.claude/*.local.json
+.claude/todos/
+.claude/shell-snapshots/
+
+# ── ツールが生成する作業ファイル ───────────────────────
+.playwright-mcp/
+*.tmp
+*.log
+.cache/
+
+# ── レビュー対象の契約書と出力レポート ─────────────────
+# 実在の契約書には氏名・報酬額・取引先名が含まれる。
+# 誤ってコミットするとリポジトリの履歴から消すのが難しいので、
+# 拡張子とファイル名の両面で弾いておく。
+契約書チェック結果_*.md
+契約書チェック結果_*.html
+contract-review-*.md
+*.pdf
+*.docx
+*.doc
+!docs/**/*.pdf
+
+# ── 評価・テストの作業ディレクトリ ─────────────────────
+# サンプル契約書と実行結果が入る。再生成できるので追跡しない。
+# 結果を残したくなったら、この行を消すか個別に git add -f する。
+contract-check-workspace/
