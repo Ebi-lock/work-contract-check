@@ -148,6 +148,10 @@ e-Gov のコンテンツには[公共データ利用規約（第1.0版）](https
 - [厚生労働省 労働契約等解説セミナー（労働契約ポータルサイト）](https://roukeiseminar.mhlw.go.jp/rules.html) — 雇用契約の行政解釈と裁判例
 - [日本法令索引](https://hourei.ndl.go.jp/)（国立国会図書館） — 改正沿革・制定経緯
 
+## プライバシー（Privacy）
+
+開発者は利用者の情報を収集しません。通信先と保存するファイルは上記のとおりです。詳しくは [Privacy Policy](https://github.com/Ebi-lock/work-contract-check/blob/main/plugins/contract-check/PRIVACY.md) を参照してください。
+
 ## ライセンス
 
 MIT

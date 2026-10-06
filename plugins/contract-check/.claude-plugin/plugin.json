@@ -18,5 +18,6 @@
     "リーガルチェック",
     "フリーランス法",
     "下請法"
-  ]
+  ],
+  "privacyPolicyUrl": "https://github.com/Ebi-lock/work-contract-check/blob/main/plugins/contract-check/PRIVACY.md"
 }
